@@ -19,6 +19,22 @@ document.write(`<h2>String Concat : ${myName.concat(" ", name)}`);
 document.write("</br></br>")
 document.write("<h2>Arrays Methods</br>");
 
-let fruits = ["Apple","Mango","Grapes"];
 
-document.write("<h2>", fruits);
+let fruits = ["Apple","Mango"];
+let num = [1,2,3,4]
+document.write(`<h2> Print Array: ${fruits}`);
+
+fruits.push("Grapes");
+document.write(`<h2> Push (Grapes) in Array: ${fruits.join(", ")}`);
+
+num.pop();
+document.write(`<h2> Pop Method in Array: ${num}`);
+
+let fruit = ["Apple","Mango","Orange"];
+fruit.fill("Dates");
+document.write(`<h2> Fill Method in Array: ${fruit}`);
+
+let fruitItems = ["Apple","Mango","Orange"];
+fruitItems.shift();
+document.write(`<h2> Shift Method in Array: ${fruitItems}`);
+
